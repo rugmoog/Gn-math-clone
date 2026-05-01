@@ -241,7 +241,7 @@ function openZone(file) {
 
 function getZoneURL(file) {
     if (file.url && file.url.startsWith("http")) {
-        return file.url;
+        return file.url.replaceAll("games","Gn-math-clone/games");
     } else {
         return "/games/" + file.name
             .replace(/ /g, '-')
