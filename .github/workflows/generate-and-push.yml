@@ -1,7 +1,7 @@
 name: Auto add games
 
 on:
-  workflow_dispatch:
+  # workflow_dispatch:
   schedule:
     - cron: '*/15 * * * *'
 
